@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/fixme_my_friend/hw02_fix_app/types"
+	"github.com/Funduchka/otus_go_basic_hw/hw02_fix_app/types"
 )
 
 func ReadJSON(filePath string) ([]types.Employee, error) {
@@ -30,7 +30,5 @@ func ReadJSON(filePath string) ([]types.Employee, error) {
 		return nil, err
 	}
 
-	res := data
-
-	return res, nil
+	return data, nil
 }
